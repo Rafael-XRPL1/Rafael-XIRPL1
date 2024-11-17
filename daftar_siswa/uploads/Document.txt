@@ -1,0 +1,9 @@
+Nama: Rendra
+Nis: 23139
+Photo: uploads/images-2.jpg
+Jenis Kelamin: laki laki
+Kelas: X
+Jurusan: PPLG
+Keahlian: komputer
+Keahlian Lainnya: Memiliki Marsha
+

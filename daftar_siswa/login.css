@@ -1,0 +1,283 @@
+body{
+    margin: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.logo{
+    margin-top: 10px;
+    position: relative;
+    width: 110px;
+    height: 110px;
+    background: transparent;
+    border: 5px solid rgb(0, 89, 255); 
+    border-radius: 50%;
+    text-align: center;
+    line-height: 110px; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(0, 0, 255);
+    font-size: 25px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: background-color 1s  color 1s;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+    box-shadow: 0 20px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logo::before{
+    content: "";
+        position: absolute;
+            top: -8px; 
+            left: -8px; 
+            width: 100%;
+            height: 100%;
+            border: 8px solid transparent; 
+            border-top: 8px solid rgb(0, 0, 255); 
+            border-right: 8px solid rgb(0, 0, 255); 
+            border-radius: 50%;
+                animation: animate 2s linear infinite;
+}
+
+.logo:hover{
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+}
+
+.judul{
+    cursor: none;
+    color: rgb(0, 0, 255);
+    text-align: center;
+    margin-top: 20px;
+    font-size: x-large;
+}
+
+.judul:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 255);
+}
+
+.subjudul{
+    cursor: none;
+    color: rgb(0, 0, 255);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.subjudul:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 255);
+}
+
+.text{
+    cursor: pointer;
+    color: rgb(0, 0, 255);
+    text-align: center;
+    margin-top: 10px;
+    border-bottom: 5px solid rgb(0, 0, 255);
+}
+
+.text:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 255);
+}
+
+.tanggal{
+    float: right;
+    color: blue;
+    background-color: none;
+    font-style: italic;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.tanggal:hover{
+    background-color: rgb(0, 0, 255);
+    color: rgb(255, 255, 255);
+}
+
+.jam{
+    float: left;
+    background-color: none;
+    color: rgb(0, 0, 255);
+    font-size: 20px;
+    font-style: italic;
+}
+
+.jam:hover{
+    background-color: rgb(0, 0, 255);
+    color: rgb(255, 255, 255);
+}
+
+input:required{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 255);
+}
+
+.image{
+    width: 100px;
+    height: 100px;
+}
+
+.img{
+    float: right;
+    margin-top: -120px;
+    margin-right: 10px;
+    width: 130px;
+    height: 130px;
+    border: 3px solid rgb(0, 0, 255);
+    box-shadow:0, 20px  rgb(0, 0, 255);
+    border-radius: 50%;
+}
+
+.h3{
+    font-size: 25px;
+    font-style: italic;
+    font-family: sans-serif;
+    background-color: rgb(0, 0, 255);
+    color: rgb(255, 255, 255);
+    padding-left: 15px;
+    border-radius: 10px;
+}
+
+h3{
+    font-size: 25px;
+    font-style: italic;
+    font-family: sans-serif;
+    background-color: rgb(0, 0, 255);
+    color: rgb(255, 255, 255);
+    padding-left: 15px;
+    border-radius: 10px;
+}
+
+::placeholder{
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+}
+
+.input{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 255);
+    width: 300px;
+    height: 20px;
+    border-radius: 12px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.inp{
+    width: 30px;
+    height: 20px;
+    color: rgb(0, 0, 255);
+}
+
+button{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 255);
+    margin-top: 20px;
+    width: 90px;
+    height: 30px;
+    border-radius: 12px;
+}
+
+button:hover{
+    background-color: rgb(0, 128, 0);
+}
+
+.btn{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 255);
+    margin-top: 20px;
+    width: 90px;
+    height: 30px;
+    border-radius: 12px;
+}
+
+.btn:hover{
+    background-color: rgb(214, 0, 0);
+}
+
+.loading {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    opacity: 1.5;
+}
+
+.tunggu{
+    margin-top: 10px;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background: rgb(0, 0, 0);
+    border: 5px solid rgb(0, 0, 0); 
+    border-radius: 50%;
+    text-align: center;
+    line-height: 110px; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+    box-shadow: 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.tunggu::before{
+    content: "";
+        position: absolute;
+            top: -8px; 
+            left: -8px; 
+            width: 100%;
+            height: 100%;
+            border: 8px solid transparent; 
+            border-top: 8px solid rgb(255, 255, 255); 
+            border-right: 8px solid rgb(255, 255, 255); 
+            border-radius: 50%;
+                animation: animate 2s linear infinite;
+}
+
+img{
+    width: 100%;
+    height: 100%;;
+    opacity: 0.9;
+}
+
+.image{
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    opacity: 1.5;
+}
+
+.p{
+    font-style: italic;
+    font-family: sans-serif;
+    font-size: larger;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background: transparent;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Pendaftaran Sederhana</title>
+    <link rel="icon" href="jangkar.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <div class="logo">Daftar</div>
+
+    <div class="img" id="imageContainer">
+        <img src="anchor.png" alt="Anchor Image">
+    </div>
+
+    <header>
+        <h2 class="judul">PORTAL PENDAFTAR</h2>
+        <h1 class="subjudul">WEB COMMUNITY</h1>
+        <h4 class="text">Visit my site on www.webcomunity.com</h4>
+    </header>
+
+    <div class="tanggal" id="tanggal"></div>
+
+    <div class="jam">
+        <div class="gambar">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+
+            <span class="waktu-text">
+                <span class="nomor" id="hours"></span>
+                <span class="colon">:</span>
+                <span class="nomor" id="minutes"></span>
+                <span class="colon">:</span>
+                <span class="nomor" id="seconds"></span>
+            </span>
+        </div>
+    </div>
+
+    <br>
+
+    <form action="login.php" method="post" enctype="multipart/form-data"> 
+
+        <label for="nama"></label>
+        <h3>Nama</h3>
+        <input class="input" type="text" required placeholder="nama lengkap..." name="nama">
+        <br>
+
+        <label for="nis"></label>
+        <h3>NIS</h3>
+        <input class="input" type="text" required placeholder="nis..." name="nis">
+        <br>
+
+        <label for="photo"></label>
+        <h3 class="h3">Photo</h3>
+        <input type="file" id="photo" name="photo">
+        <br>
+
+        <label for="jenis_kelamin"></label>
+        <h3>Jenis Kelamin</h3>
+        <input class="inp" type="radio" required name="jenis_kelamin" value="laki laki">
+        <span>Laki-Laki</span>
+        <input class="inp" type="radio" required name="jenis_kelamin" value="Perempuan">
+        <span>Perempuan</span>
+        <br>
+
+        <label for="kelas"></label>
+        <h3>Kelas</h3>
+        <select required class="input" name="kelas">
+            <option></option>
+            <option>X</option> 
+            <option>XI</option>
+            <option>XII</option>
+        </select> 
+        <br>
+
+        <label for="jurusan"></label>
+        <h3>Jurusan</h3>
+        <select required class="input" name="jurusan">
+            <option></option>
+            <option>PPLG</option>
+            <option>NKN</option>
+            <option>TPK</option>
+            <option>TBSM</option>
+            <option>TKR</option>
+            <option>KKB</option>
+            <option>TP</option>
+        </select>
+        <br>
+
+        <label for="keahlian"></label>
+        <h3>Keahlian yang kalian miliki</h3>
+        <input class="inp" type="checkbox" name="keahlian" value="komputer">
+        <label for="komputer">Komputer</label>
+        <br>
+        <input class="inp" type="checkbox" name="keahlian" value="informasi">
+        <label for="informasi">Informasi</label>
+        <br>
+        <input class="inp" type="checkbox" name="sebutkan" value="lain-lain">
+        <label for="lain-lain">Dan Lain Lain: Sebutkan</label>
+        <input class="input" type="text" name="sebutkan">        
+        <br>
+
+        <button id="tombol" type="submit">Kirim</button>
+        <button class="btn" type="reset" id="btnCancel">Batal</button>
+    </form>
+
+    <div class="loading" style="display: none;">
+        <p class="tunggu">Loading</p>
+        <img class="image" src="anchor.png" alt="Loading icon">
+        <p class="p">Sedang dalam proses.....</p>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
