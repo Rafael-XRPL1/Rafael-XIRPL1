@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <script src="../js/contentSwitch.js" defer></script>
+    <script src="../js/management_daftar.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="switcher">
+            <button id="addpesananBtn">Tambah Pesanan</button>
+            <button id="addkeranjangBtn">Daftar Pesanan</button>
+            <button id="addmenuBtn">Tambah Menu</button>
+        </div>
+
+        <section id="addPesanan" class="content">
+            <h2>Pemesanan Menu</h2>
+            <form id="orderForm">
+                <div class="customer-info">
+                    <h3>Informasi Pelanggan</h3>
+                    <label for="customerName">Nama Pelanggan (Wajib):</label>
+                    <input type="text" name="customerName" id="customerName" required>
+
+                    <label for="customerPhone">Nomor Telepon (Wajib):</label>
+                    <input type="tel" name="customerPhone" id="customerPhone" required>
+
+                    <label for="alamat">Alamat (Wajib):</label>
+                    <input type="text" name="alamat" id="alamat" required>
+                </div>
+
+                <div class="order-info">
+                    <h3>Pilih Menu</h3>
+                    <label for="kategori">Kategori:</label>
+                    <select id="kategori" name="kategori">
+                        <option value=""></option>
+                        <option value="makanan">Makanan</option>
+                        <option value="minuman">Minuman</option>
+                    </select>
+                </div>
+
+                <h3>Daftar Menu</h3>
+                <table id="menuTable">
+                    <thead>
+                        <tr>
+                            <th>Nama Menu</th>
+                            <th>Harga</th>
+                            <th>Jumlah</th>
+                            <th>Pilih</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+
+                <div id="selectedItems">
+                    <h3>Pesanan Anda</h3>
+                    <ul id="selectedItemsList"></ul>
+                </div>
+
+                <div class="total">
+                    <p>Total Harga: <span id="totalPrice">0</span></p>
+                </div>
+
+                <label for="metode_pembelian">Metode Pembayaran (Wajib):</label>
+                <select id="metode_pembelian" name="metode_pembelian" required>
+                    <option value="">Pilih Metode</option>
+                    <option value="tunai">Uang Tunai</option>
+                    <option value="online">Online (GoPay, QRIS)</option>
+                </select>
+                <div id="paymentDetails"></div>
+
+                <button type="submit" id="submitOrder">Pesan Sekarang</button>
+            </form>
+        </section>
+
+        <section id="daftarPesanan" class="content" style="display: none;">
+            <table id="orderTable">
+                <thead>
+                    <h1>List customer</h1>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            
+        </section>
+
+        <div id="confirmModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <p>Apakah Anda yakin ingin membatalkan pesanan ini?</p>
+                <button id="cancelOrderBtn">Batal</button>
+                <button id="confirmOrderBtn">Oke</button>
+            </div>
+        </div>
+
+        
+        <section id="tambahMenu" class="content" style="display: none;">
+            <h2>Tambah Menu</h2>
+            <h2>Comming Soon</h2>
+        </section>
+    </main>
+</body>
+</html>

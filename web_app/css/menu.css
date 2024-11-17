@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url(../picture/kuliner.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: #fff;
+}
+
+main {
+    padding: 10px;
+    background: transparent;
+    max-width: 100%;
+    margin: 0px auto;
+    bottom: 5px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.switcher {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.switcher button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.switcher button:hover {
+    background-color: #575757;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #ffffff;
+    background: transparent;
+}
+
+input[type="number"] {
+    width: 85%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #ffffff;
+    background: transparent;
+}
+
+select {
+    color: #ffffff;
+}
+
+option {
+    color: #000;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: transparent;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    color: #ffffff;
+}
+
+table th {
+    background-color: #f8f9fa;
+    color: #000000;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+#addPesanan {
+    display: block;
+}
+
+.order-info select {
+    color: #ffffff;
+}
+
+.order-info option {
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; 
+    }
+
+    .container {
+        flex-direction: column; 
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column; 
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 50%;
+        font-size: 0px; 
+        margin-left: 200px;
+    }
+
+    main {
+        padding: 5px;
+    }
+
+    .switcher button {
+        padding: 8px 15px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    select,
+    input[type="number"] {
+        padding: 8px;
+    }
+
+    button[type="submit"] {
+        padding: 8px 15px;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}

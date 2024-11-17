@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url(../picture/kuliner.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+main {
+    padding: 10px;
+}
+
+.switcher {
+    margin-bottom: 20px;
+}
+
+button {
+    margin-right: 10px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #575757;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    flex: 1;
+    color: #ffffff;
+    margin-right: -40px; 
+}
+
+.form-group input {
+    flex: 3;
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    padding: 10px; 
+    background: transparent; 
+    color: #ffffff; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff; 
+}
+
+th {
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.form-group input::placeholder {
+    color: #ffffff; 
+}
+
+.form-group input:focus {
+    outline: none; 
+    border-color: #575757; 
+}
+
+div .label {
+    flex: 1;
+    color: #ffffff;
+    margin-right: -40px; 
+}
+
+.input {
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    padding: 10px; 
+    background: transparent; 
+    color: #ffffff; 
+}
+
+.select {
+    color: #ffffff; 
+}
+
+.option {
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; 
+    }
+
+    .container {
+        flex-direction: column; 
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column; 
+    }
+}
+
+@media (max-width: 480px) {
+    .form-group {
+        flex-direction: column; 
+    }
+
+    .form-group label {
+        margin-right: 0; 
+        margin-bottom: 5px; 
+    }
+
+    h2 {
+        font-size: 24px; 
+    }
+
+    button {
+        padding: 8px; 
+        font-size: 14px; 
+    }
+
+    .form-group input {
+        font-size: 14px; 
+    }
+
+    table {
+        font-size: 14px; 
+    }
+}

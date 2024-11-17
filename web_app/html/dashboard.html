@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <script src="../js/date.js" defer></script>
+    <script src="../js/contentSwitch.js" defer></script>
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="date"></div>
+            <ul>
+                <li><a href="#" onclick="loadContent('../html/sistem_dashboard.html')">Dashboard</a></li>
+                <li><a href="#" onclick="loadContent('../html/tambah_admin.html')" class="admin-only">Tambah Admin</a></li>
+                <li><a href="#" onclick="loadContent('../html/daftar.html')">Menu</a></li>
+                <li><a href="#" onclick="loadContent('../html/transaksi.html')" class="admin-only">Transaksi</a></li>
+                <li><a href="#" onclick="loadContent('../html/comment.html')">Comment</a></li>
+                <li><button type="submit" id="logoutButton">Logout</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="top-header">
+        <h1>Kantin Sukaria</h1>
+    </div>
+
+    <main>
+        <iframe id="contentFrame" src="../html/sistem_dashboard.html" class="content-frame"></iframe>       
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kantin Suka Ria. All rights reserved.</p>
+    </footer>
+</body>
+</html>

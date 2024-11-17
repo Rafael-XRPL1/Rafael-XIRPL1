@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333333;
+    color: #ffffff;
+    position: fixed; 
+    height: 100vh; 
+    width: 200px; 
+    padding: 10px;
+    margin-top: -50px;
+    box-shadow: 2px 0 5px #00000080;
+}
+
+nav {
+    display: flex;
+    flex-direction: column; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 15px 0; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px; 
+    display: block; 
+}
+
+nav a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+nav button {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+    background: transparent;
+    padding: 10px; 
+    display: block; 
+}
+
+.top-header {
+    position: fixed;
+    top: 0;
+    left: 222px; 
+    right: 0; 
+    background: transparent;
+    padding: 0px;
+    box-shadow: 0 2px 5px #ffffff;
+    z-index: 10; 
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin: 0; 
+    width: calc(100% - 50px); 
+}
+
+main {
+    margin-left: 220px; 
+    margin-top: 50px;
+    height: calc(100vh - 80px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-frame {
+    width: calc(100% - 10px); 
+    height: calc((100% - 0px)); 
+    border: none; 
+    background-color: #000000; 
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media (max-width: 1024px) {
+    header {
+        width: 150px; 
+    }
+
+    nav {
+        width: 150px; 
+    }
+
+    main {
+        margin-left: 170px; 
+    }
+
+    h1 {
+        font-size: 20px; 
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; 
+    }
+
+    header {
+        width: 100px; 
+    }
+
+    nav {
+        width: 100px; 
+    }
+
+    main {
+        margin-left: 120px; 
+    }
+
+    h1 {
+        font-size: 18px; 
+    }
+
+    .top-header {
+        left: 112px; 
+    }
+}
+
+@media (max-width: 480px) {
+    body{
+        width: auto;
+    }
+
+    header {
+        display: flex; 
+    }
+
+    main {
+        margin-left: 0; 
+        margin-top: 20px; 
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    .top-header {
+        left: 0; 
+        right: 0; 
+        size: 12px;
+    }
+
+    h1 {
+        font-size: 16px; 
+    }
+}

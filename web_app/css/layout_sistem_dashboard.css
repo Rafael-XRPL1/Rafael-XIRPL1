@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url(../picture/kuliner.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.typing {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    white-space: nowrap;
+    border-right: 2px solid;
+    overflow: hidden;
+    width: fit-content;
+    position: absolute; 
+    top: 40%; 
+    left: 48%;
+    transform: translate(-50%, -50%); 
+    pointer-events: none; 
+    z-index: 10; 
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; 
+    }
+
+    .typing {
+        flex-direction: column; 
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column; 
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px; 
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .typing {
+        font-size: 10px; 
+        top: 5%;
+        left: 230px;
+         
+    }
+}

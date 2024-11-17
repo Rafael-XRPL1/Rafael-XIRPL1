@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online</title>
+    <link rel="stylesheet" href="../css/tambah_admin.css">
+    <script src="../js/management.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="switcher">
+            <button id="addAdminBtn">Tambah Admin</button>
+            <button id="viewAdminBtn">Daftar Admin</button>
+        </div>
+
+        <div id="addAdmin" class="content">
+            <h2>Tambah Admin</h2>
+            <form id="addAdminForm">
+                <div class="form-group">
+                    <label class="label" for="role">Pilih Role</label>
+                <select class="input" name="role" id="role" required>
+                    <option class="option" value=""></option>
+                    <option class="option" value="editor">editor</option>
+                    <option class="option" value="superadmin">superAdmin</option>
+                    <option class="option" value="admin">admin</option>
+                </select><br><br>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" placeholder="Username..." required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Email..." required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Password..." required>
+                </div>
+                <button type="submit">Tambah Admin</button>
+            </form>
+        </div>
+
+        <div id="viewAdmin" class="content" style="display: none;">
+            <h2>Daftar Admin</h2>
+            <div id="adminList"></div>
+        </div>
+    </main>
+</body>
+</html>
